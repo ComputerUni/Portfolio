@@ -8,7 +8,5 @@
         public string Company { get; set; }
         public int StartYear { get; set; }
         public string? EndYear { get; set; }
-
-
     }
 }

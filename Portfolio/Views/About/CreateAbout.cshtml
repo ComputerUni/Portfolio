@@ -1,0 +1,22 @@
+﻿@model About
+@{
+    ViewData["Title"] = "Yeni Hakkımda Bilgisi Ekle";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<form method="post">
+    @Html.AntiForgeryToken()
+
+
+    <label>Başlık</label>
+    <input type="text" asp-for="Title" class="form-control" required />
+    <br />
+    <label>Açıklama</label>
+    <textarea asp-for="Description" class="form-control" rows="5" required></textarea>
+    <br />
+    <label>Görsel Url</label>
+    <input type="text" asp-for="ImageUrl" class="form-control" required />
+    <br />
+    <button type="submit" class="btn btn-outline-secondary">Kaydet</button>
+
+</form>

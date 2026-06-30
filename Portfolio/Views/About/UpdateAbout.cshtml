@@ -1,10 +1,11 @@
 ﻿@model About
 @{
-    ViewData["Title"] = "Yeni Hakkımda Bilgisi Ekle";
+    ViewData["Title"] = "Hakkımda Bilgisini Güncelle";
     Layout = "~/Views/AdminLayout/Layout.cshtml";
 }
 
 <form method="post">
+    <input type="hidden" asp-for="Id"/>
     <label>Başlık</label>
     <input type="text" asp-for="Title" class="form-control" required />
     <br />
@@ -14,6 +15,5 @@
     <label>Görsel Url</label>
     <input type="text" asp-for="ImageUrl" class="form-control" required />
     <br />
-    <button type="submit" class="btn btn-outline-secondary">Kaydet</button>
-
+    <button type="submit" class="btn btn-outline-secondary">Güncelle</button>
 </form>

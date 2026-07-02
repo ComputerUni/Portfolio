@@ -1,0 +1,35 @@
+﻿@model List<Project>
+@{
+    ViewData["Title"] = "Projelerim";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+
+<table class="table table-hover table-borderer">
+    <tr>
+        <th>Görsel</th>
+        <th>Proje Adı</th>
+        <th>Proje Açıklaması</th>
+        <th>Github Linki</th>
+        <th>İşlemler</th>
+    </tr>
+
+    @foreach (var project in Model)
+    {
+        <tr>
+            <td>
+                <img src="@project.ImageUrl" style="height:50px;width:50px;" />
+            </td>
+            <td>@project.Name</td>
+            <td>@project.Description</td>
+            <td><a href="@project.GithubUrl" target="_blank" class="btn btn-outline-secondary">Github Url<a /></td>
+            <td>
+                <a href="#" class="btn btn-outline-danger">Sil</a>
+                <a href="/Project/UpdateProject/@project.Id" class="btn btn-outline-warning">Güncelle</a>
+            </td>
+
+        </tr>
+    }
+</table>
+
+<a href="/Project/CreateProject" class="btn btn-outline-info">Yeni Proje Oluştur</a>

@@ -1,0 +1,35 @@
+﻿@model Project
+@{
+    ViewData["Title"] = "Proje Güncelleme Sayfası";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<form method="post" class="col-md-12">
+    <input type="hidden" asp-for="Id" />
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label>Proje Adı</label>
+            <input type="text" class="form-control border-2" asp-for="Name" />
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label>Görsel Url</label>
+            <input type="text" class="form-control border-2" asp-for="ImageUrl" />
+            <span class="text-danger" asp-validation-for="ImageUrl"></span>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>Proje Açıklaması</label>
+        <textarea type="text" class="form-control border-2" asp-for="Description" rows="3"></textarea>
+        <span class="text-danger" asp-validation-for="Description"></span>
+    </div>
+    <div class="mb-3">
+        <label>Github Url</label>
+        <input type="text" class="form-control border-2" asp-for="GithubUrl" />
+        <span class="text-danger" asp-validation-for="GithubUrl"></span>
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-outline-secondary">Güncelle</button>
+    </div>
+
+</form>

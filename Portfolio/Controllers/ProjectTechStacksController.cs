@@ -15,10 +15,15 @@ namespace Portfolio.Controllers
             _context = context;
         }
 
+        //Eager Loading(Tüm verileri en baştan yüklemek hem teknolojideki veriler hem teknolojideki veriler sql'deki inner join mantığına benziyor.)
         public IActionResult Index()
         {
-            var projectTechStacks = _context.ProjectTechStacks.Include(x => x.Project).Include(x => x.TechStack).ToList();
-            return View(projectTechStacks);
+            ViewBag.Values = _context.ProjectTechStacks.Include(x => x.Project).Include(x => x.TechStack).GroupBy(x => x.Project).Select(a => new
+            {
+                Project = a.Key,
+                TechNames = a.Select(x => x.TechStack.Name).ToList()
+            }).ToList();
+            return View();
         }
 
         [HttpGet]

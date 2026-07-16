@@ -1,0 +1,44 @@
+﻿@model UserMessage
+@*
+    Default User Message
+    Okunan ve okunmayan mesajlar olarak görüntüleyeceğiz filtreleme yapacağız (toggle olabilir filtrele listesi olabilir.) -> Ödev
+*@
+
+
+<div class="glass-card p-stack-lg rounded-xl">
+    <form method="post" asp-controller="Default" asp-action="SendMessage" class="flex flex-col gap-stack-md">
+        <div>
+            <label class="font-label-sm text-label-sm text-on-surface-variant block mb-2" for="name">Adınız Soyadınız</label>
+            <input asp-for="Name" class="w-full bg-surface-variant/50 border border-outline-variant rounded-md px-4 py-3 text-on-background focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="Ahmet Yılmaz" type="text" required />
+        </div>
+        <div>
+            <label class="font-label-sm text-label-sm text-on-surface-variant block mb-2" for="email">Email Adresiniz</label>
+            <input asp-for="Email" class="w-full bg-surface-variant/50 border border-outline-variant rounded-md px-4 py-3 text-on-background focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="ahmet@gmail.com" type="email" required />
+        </div>
+        <div>
+            <label class="font-label-sm text-label-sm text-on-surface-variant block mb-2" for="message">Message</label>
+            <textarea asp-for="MessageBody" class="w-full bg-surface-variant/50 border border-outline-variant rounded-md px-4 py-3 text-on-background focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all min-h-[150px]" placeholder="Mesaj içeriğinizi bu kısma giriniz..." required></textarea>
+        </div>
+        <button onclick="sendMessage()" class="w-full px-8 py-4 bg-primary text-on-primary rounded-DEFAULT font-label-sm text-label-sm hover:opacity-90 transition-opacity mt-2" type="submit">Mesajınızı Gönderin</button>
+    </form>
+</div>
+
+
+<script>
+    function sendMessage()
+    {
+        Swal.fire({
+            title: "Mesajınız gönderildi",
+            text: "Size en kısa sürede dönüş yapılacaktır.",
+            icon: "success",
+            showCancelButton: false,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Tamam",
+            cancelButtonText: "İptal"
+        }).then((result) => {
+            if (result.isConfirmed)
+                window.location.href = "/Default/Index";
+        });
+    }
+</script>

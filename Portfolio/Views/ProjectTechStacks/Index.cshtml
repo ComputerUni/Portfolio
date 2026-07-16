@@ -1,5 +1,4 @@
-﻿@model List<ProjectTechStack>
-@{
+﻿@{
     ViewData["Title"] = "Proje Teknolojileri";
     Layout = "~/Views/AdminLayout/Layout.cshtml";
     int count = 0;
@@ -12,13 +11,13 @@
         <th>Kullanılan Teknolojiler</th>
     </tr>
 
-    @foreach (var tech in Model)
+    @foreach (var tech in ViewBag.Values)
     {
         count++;
         <tr>
             <td>@count</td>
             <td>@tech.Project.Name</td>
-            <td>@tech.TechStack.Name</td>
+            <td>@string.Join(", ", tech.TechNames)</td>
         </tr>
     }
 </table>

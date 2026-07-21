@@ -6,7 +6,7 @@
 
 
 <div class="glass-card p-stack-lg rounded-xl">
-    <form method="post" asp-controller="Default" asp-action="SendMessage" class="flex flex-col gap-stack-md">
+    <form id="messageForm" method="post" asp-controller="Default" asp-action="SendMessage" class="flex flex-col gap-stack-md">
         <div>
             <label class="font-label-sm text-label-sm text-on-surface-variant block mb-2" for="name">Adınız Soyadınız</label>
             <input asp-for="Name" class="w-full bg-surface-variant/50 border border-outline-variant rounded-md px-4 py-3 text-on-background focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="Ahmet Yılmaz" type="text" required />
@@ -25,20 +25,41 @@
 
 
 <script>
-    function sendMessage()
-    {
-        Swal.fire({
-            title: "Mesajınız gönderildi",
-            text: "Size en kısa sürede dönüş yapılacaktır.",
-            icon: "success",
-            showCancelButton: false,
-            confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
-            confirmButtonText: "Tamam",
-            cancelButtonText: "İptal"
+
+
+
+
+
+
+    function sendMessage(){
+
+        if(!document.getElementById("messageForm").checkValidity()){
+     Swal.fire({
+      title: "Hata!",
+      text: "Form bilgilerini lütfen doldurun.",
+      icon: "warning",
+      showCancelButton: false,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Tamam",
+      cancelButtonText: "İptal"
+    });
+
+        }
+        else{
+    Swal.fire({
+          title: "Mesajınız gönderildi!",
+          text: "Size en kısa sürede dönüş yapılacaktır.",
+          icon: "success",
+          showCancelButton: false,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Tamam",
+          cancelButtonText: "İptal"
         }).then((result) => {
-            if (result.isConfirmed)
-                window.location.href = "/Default/Index";
+          if (result.isConfirmed)
+          window.location.href = "/Default/Index"
         });
+        }
     }
 </script>

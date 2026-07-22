@@ -24,8 +24,8 @@
             <td>@project.Description</td>
             <td><a href="@project.GithubUrl" target="_blank" class="btn btn-outline-secondary">Github Url<a /></td>
             <td>
-                <button onclick="deleteProject(@project.Id)" class="btn btn-outline-danger">Sil</button>
-                <a href="/Project/UpdateProject/@project.Id" class="btn btn-outline-warning">Güncelle</a>
+                <button onclick="deleteProject(@project.Id)" class="btn btn-outline-danger"><i class="bi bi-trash"></i></button>
+                <a href="/Project/UpdateProject/@project.Id" class="btn btn-outline-warning"><i class="bi bi-pencil"></i></a>
             </td>
 
         </tr>

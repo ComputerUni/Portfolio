@@ -4,54 +4,53 @@ using Portfolio.Data.Entities;
 
 namespace Portfolio.Controllers
 {
-    public class AboutController : Controller
+    public class BannerController : Controller
     {
         private readonly AppDbContext _context;
 
-        public AboutController(AppDbContext context)
+        public BannerController(AppDbContext context)
         {
             _context = context;
         }
 
         public IActionResult Index()
         {
-            var about = _context.Abouts.FirstOrDefault();
-            return View(about);
+            var banner = _context.Banners.FirstOrDefault();
+            return View(banner);
         }
 
         [HttpGet]
-        public IActionResult CreateAbout()
+        public IActionResult CreateBanner()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult CreateAbout(About about)
+        public IActionResult CreateBanner(Banner banner)
         {
-            _context.Abouts.Add(about);
+            _context.Banners.Add(banner);
             _context.SaveChanges();
             return RedirectToAction("Index");
-
         }
 
-        public IActionResult UpdateAbout(int id)
+        public IActionResult UpdateBanner(int id)
         {
-            var about = _context.Abouts.Find(id);
-            return View(about);
+            var banner = _context.Banners.Find(id);
+            return View(banner);
         }
 
         [HttpPost]
-        public IActionResult UpdateAbout(About about)
+        public IActionResult UpdateBanner(Banner banner)
         {
-            _context.Abouts.Update(about);
+            _context.Banners.Update(banner);
             _context.SaveChanges();
             return RedirectToAction("Index");
         }
 
-        public IActionResult DeleteAbout(int id)
+        public IActionResult DeleteBanner(int id)
         {
-            var about = _context.Abouts.Find(id);
-            _context.Abouts.Remove(about);
+            var banner = _context.Banners.Find(id);
+            _context.Banners.Remove(banner);
             _context.SaveChanges();
             return RedirectToAction("Index");
         }

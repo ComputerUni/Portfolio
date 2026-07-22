@@ -1,0 +1,11 @@
+﻿@model List<Skill>
+@{
+    //Default Skill
+}
+
+<div class="mt-stack-sm">
+    <h4 class="font-label-sm text-label-sm text-primary mb-1">Yeteneklerim</h4>
+    <p class="font-body-md text-body-md text-on-surface-variant">
+        @string.Join(", ", Model.Where(s => s.IsActive).Select(s => s.Name))
+    </p>
+</div>

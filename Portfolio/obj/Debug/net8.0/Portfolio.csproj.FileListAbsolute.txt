@@ -146,3 +146,6 @@ C:\Users\BURHAN\Desktop\Portfolio\Portfolio\obj\Debug\net8.0\refint\Portfolio.dl
 C:\Users\BURHAN\Desktop\Portfolio\Portfolio\obj\Debug\net8.0\Portfolio.pdb
 C:\Users\BURHAN\Desktop\Portfolio\Portfolio\obj\Debug\net8.0\Portfolio.genruntimeconfig.cache
 C:\Users\BURHAN\Desktop\Portfolio\Portfolio\obj\Debug\net8.0\ref\Portfolio.dll
+C:\Users\BURHAN\Desktop\Portfolio\Portfolio\bin\Debug\net8.0\X.PagedList.dll
+C:\Users\BURHAN\Desktop\Portfolio\Portfolio\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
+C:\Users\BURHAN\Desktop\Portfolio\Portfolio\obj\Debug\net8.0\Portfolio.MvcApplicationPartsAssemblyInfo.cs

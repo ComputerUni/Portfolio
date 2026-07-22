@@ -4,32 +4,120 @@
     Layout = "~/Views/AdminLayout/Layout.cshtml";
 }
 
-<form method="post" class="col-md-12">
-    <div class="row">
-        <div class="col-md-6 mb-3">
-            <label>Proje Adı</label>
-            <input type="text" class="form-control border-2" asp-for="Name" />
-            <span class="text-danger" asp-validation-for="Name"></span>
-        </div>
-        <div class="col-md-6 mb-3">
-            <label>Görsel Url</label>
-            <input type="text" class="form-control border-2" asp-for="ImageUrl" />
-            <span class="text-danger" asp-validation-for="ImageUrl"></span>
-        </div>
+<style>
+    .create-card {
+        border-radius: 16px;
+        border: 1px solid #e9ecef;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        width: 100%;
+    }
+
+    .create-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 16px 16px 0 0;
+        padding: 24px 28px;
+        color: white;
+    }
+
+    .create-body {
+        padding: 28px;
+    }
+
+    .form-label {
+        font-weight: 600;
+        font-size: 0.85rem;
+        color: #475569;
+        margin-bottom: 6px;
+    }
+
+    .form-control {
+        border-radius: 10px;
+        border: 1.5px solid #e2e8f0;
+        padding: 10px 14px;
+        font-size: 0.95rem;
+        transition: border 0.2s;
+    }
+
+        .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102,126,234,0.15);
+        }
+
+    .toggle-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: #f8fafc;
+        border-radius: 10px;
+        padding: 12px 16px;
+        border: 1.5px solid #e2e8f0;
+    }
+
+    .form-check-input {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        accent-color: #667eea;
+    }
+
+    .btn-save {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        border: none;
+        border-radius: 10px;
+        padding: 10px 28px;
+        color: white;
+        font-weight: 600;
+        transition: opacity 0.2s;
+    }
+
+        .btn-save:hover {
+            opacity: 0.9;
+            color: white;
+        }
+
+    .btn-back {
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-weight: 600;
+    }
+</style>
+
+<div class="create-card">
+    <div class="create-header">
+        <h5 class="mb-1 fw-bold"><i class="bi bi-plus-circle me-2"></i>Yeni Proje Oluştur</h5>
+        <p class="mb-0 small opacity-75">Aşağıdaki formu doldurarak yeni bir proje ekleyin.</p>
     </div>
-    <div class="mb-3">
-        <label>Proje Açıklaması</label>
-        <textarea type="text" class="form-control border-2" asp-for="Description" rows="3"></textarea>
-        <span class="text-danger" asp-validation-for="Description"></span>
+    <div class="create-body">
+        <form method="post" enctype="multipart/form-data" class="col-md-12">
+            <div class="mb-4">
+                <label class="form-label">Proje Adı</label>
+                <input type="text" class="form-control" asp-for="Name" placeholder="Örn: .Net Core Portfolyo Projesi" />
+                <span class="text-danger small" asp-validation-for="Name"></span>
+            </div>
+            <div class="mb-4">
+                <label>Görsel</label>
+                <input type="file" class="form-control border-2" name="ImageFile" accept="image/*" />
+                <span class="text-danger" asp-validation-for="ImageUrl"></span>
+            </div>
+            <div class="mb-4">
+                <label>Proje Açıklaması</label>
+                <textarea type="text" class="form-control border-2" asp-for="Description" rows="3"></textarea>
+                <span class="text-danger" asp-validation-for="Description"></span>
+            </div>
+            <div class="mb-4">
+                <label>Github Url</label>
+                <input type="text" class="form-control border-2" asp-for="GithubUrl" />
+                <span class="text-danger" asp-validation-for="GithubUrl"></span>
+            </div>
+            <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-save">
+                    <i class="bi bi-check-lg me-1"></i>Kaydet
+                </button>
+                <a href="/Project/Index" class="btn btn-outline-secondary btn-back">
+                    <i class="bi bi-arrow-left me-1"></i>Geri
+                </a>
+            </div>
+        </form>
     </div>
-    <div class="mb-3">
-        <label>Github Url</label>
-        <input type="text" class="form-control border-2" asp-for="GithubUrl" />
-        <span class="text-danger" asp-validation-for="GithubUrl"></span>
-    </div>
-    <div class="mb-3">
-        <button type="submit" class="btn btn-outline-secondary">Kaydet</button>
-    </div>
-    
-</form>
+</div>
 

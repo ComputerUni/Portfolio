@@ -1,0 +1,20 @@
+﻿@model List<Education>
+
+<div>
+    <h3 class="font-body-lg text-body-lg font-semibold text-on-background mb-stack-md flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary">school</span> Eğitimlerim
+    </h3>
+
+    <div class="relative border-l border-outline-variant/30 pl-6 ml-3">
+        @foreach (var education in Model)
+        {
+            <!-- mb-10 ile maddeler arasındaki dikey mesafeyi net bir şekilde açıyoruz -->
+            <div class="relative mb-10 last:mb-0">
+                <span class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-primary ring-4 ring-background"></span>
+                <h4 class="font-body-lg text-body-lg text-on-background font-semibold">@education.Department</h4>
+                <p class="font-label-sm text-label-sm text-primary mb-2">@education.SchoolName | @education.StartYear - @education.GraduationYear</p>
+                <p class="font-body-md text-body-md text-on-surface-variant">@education.Description</p>
+            </div>
+        }
+    </div>
+</div>

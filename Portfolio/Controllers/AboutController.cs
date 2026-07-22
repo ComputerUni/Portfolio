@@ -7,10 +7,29 @@ namespace Portfolio.Controllers
     public class AboutController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly IWebHostEnvironment _env;
 
-        public AboutController(AppDbContext context)
+        public AboutController(AppDbContext context, IWebHostEnvironment env)
         {
             _context = context;
+            _env = env;
+        }
+
+        private async Task<string?> SaveImageAsync(IFormFile? file)
+        {
+            if (file == null || file.Length == 0)
+            {
+                return null;
+            }
+
+            var path = Path.Combine(_env.WebRootPath, "uploads", "abouts");
+            Directory.CreateDirectory(path);
+
+            var fileName = Guid.NewGuid() + Path.GetExtension(file.FileName);
+            using var stream = System.IO.File.Create(Path.Combine(path, fileName));
+            await file.CopyToAsync(stream);
+
+            return "/uploads/abouts/" + fileName;
         }
 
         public IActionResult Index()
@@ -26,14 +45,27 @@ namespace Portfolio.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateAbout(About about)
+        public async Task<IActionResult> CreateAbout(About about, IFormFile? ImageFile)
         {
+            ModelState.Remove("ImageUrl");
+
+            var imageUrl = await SaveImageAsync(ImageFile);
+
+            if(imageUrl == null)
+            {
+                ModelState.AddModelError("ImageUrl", "Görsel zorunludur.");
+                return View(about);
+            }
+
+            about.ImageUrl = imageUrl;
+
             _context.Abouts.Add(about);
             _context.SaveChanges();
             return RedirectToAction("Index");
 
         }
 
+        [HttpGet]
         public IActionResult UpdateAbout(int id)
         {
             var about = _context.Abouts.Find(id);
@@ -41,8 +73,16 @@ namespace Portfolio.Controllers
         }
 
         [HttpPost]
-        public IActionResult UpdateAbout(About about)
+        public async Task<IActionResult> UpdateAbout(About about, IFormFile? ImageFile)
         {
+            ModelState.Remove("ImageUrl");
+            var imageUrl = await SaveImageAsync(ImageFile);
+
+            if (imageUrl != null)
+            {
+                about.ImageUrl = imageUrl;
+            }
+
             _context.Abouts.Update(about);
             _context.SaveChanges();
             return RedirectToAction("Index");

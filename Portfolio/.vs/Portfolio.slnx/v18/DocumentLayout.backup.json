@@ -3,60 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\views\\skill\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:views\\skill\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\views\\shared\\components\\_adminlayoutsidebar\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:views\\shared\\components\\_adminlayoutsidebar\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\views\\shared\\components\\_defaultabout\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:views\\shared\\components\\_defaultabout\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\views\\shared\\components\\_defaultskill\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:views\\shared\\components\\_defaultskill\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\views\\banner\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:views\\banner\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\controllers\\skillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:controllers\\skillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\views\\shared\\components\\_adminlayouthead\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:views\\shared\\components\\_adminlayouthead\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\viewcomponents\\default-index\\_defaultskillviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:viewcomponents\\default-index\\_defaultskillviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\views\\project\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:views\\project\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\views\\adminlayout\\layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:views\\adminlayout\\layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\views\\shared\\components\\_defaultcontactinfo\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:views\\shared\\components\\_defaultcontactinfo\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\views\\shared\\components\\_defaultexperience\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:views\\shared\\components\\_defaultexperience\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\viewcomponents\\default-index\\_defaultexperienceviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:viewcomponents\\default-index\\_defaultexperienceviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\views\\experience\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:views\\experience\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\views\\experience\\updateexperience.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:views\\experience\\updateexperience.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\controllers\\experiencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:controllers\\experiencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\views\\experience\\createexperience.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:views\\experience\\createexperience.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\data\\entities\\experience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:data\\entities\\experience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\views\\skill\\createskill.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:views\\skill\\createskill.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\views\\project\\createproject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:views\\project\\createproject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\views\\skill\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:views\\skill\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\views\\skill\\updateskill.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:views\\skill\\updateskill.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\data\\entities\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:data\\entities\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\burhan\\desktop\\portfolio\\portfolio\\controllers\\skillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:controllers\\skillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 655,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,190 +86,190 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Default\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Default\\Index.cshtml",
-              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Default\\Index.cshtml",
-              "RelativeToolTip": "Views\\Default\\Index.cshtml",
-              "ViewState": "AgIAAM4AAAAAAAAAAAAAANUAAAA1AAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Banner\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Banner\\Index.cshtml",
+              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Banner\\Index.cshtml",
+              "RelativeToolTip": "Views\\Banner\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-22T13:09:47.836Z",
+              "WhenOpened": "2026-07-22T14:53:21.01Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultSkill\\Default.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\Components\\_DefaultSkill\\Default.cshtml",
-              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultSkill\\Default.cshtml",
-              "RelativeToolTip": "Views\\Shared\\Components\\_DefaultSkill\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultContactInfo\\Default.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Components\\_DefaultContactInfo\\Default.cshtml",
+              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultContactInfo\\Default.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Components\\_DefaultContactInfo\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-22T13:07:40.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_DefaultSkillViewComponent.cs",
-              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\ViewComponents\\Default-Index\\_DefaultSkillViewComponent.cs",
-              "RelativeDocumentMoniker": "ViewComponents\\Default-Index\\_DefaultSkillViewComponent.cs",
-              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\ViewComponents\\Default-Index\\_DefaultSkillViewComponent.cs",
-              "RelativeToolTip": "ViewComponents\\Default-Index\\_DefaultSkillViewComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-22T13:02:50.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultAbout\\Default.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\Components\\_DefaultAbout\\Default.cshtml",
-              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultAbout\\Default.cshtml",
-              "RelativeToolTip": "Views\\Shared\\Components\\_DefaultAbout\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-22T13:01:06.619Z",
+              "WhenOpened": "2026-07-22T14:47:36.458Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_AdminLayoutSidebar\\Default.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\Components\\_AdminLayoutSidebar\\Default.cshtml",
-              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_AdminLayoutSidebar\\Default.cshtml",
-              "RelativeToolTip": "Views\\Shared\\Components\\_AdminLayoutSidebar\\Default.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAABEAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Default\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Default\\Index.cshtml",
+              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Default\\Index.cshtml",
+              "RelativeToolTip": "Views\\Default\\Index.cshtml",
+              "ViewState": "AgIAANoAAAAAAAAAAAAAAOcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-22T12:55:15.256Z",
+              "WhenOpened": "2026-07-22T14:46:55.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_AdminLayoutHead\\Default.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\Components\\_AdminLayoutHead\\Default.cshtml",
-              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_AdminLayoutHead\\Default.cshtml",
-              "RelativeToolTip": "Views\\Shared\\Components\\_AdminLayoutHead\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-22T12:54:24.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\AdminLayout\\Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\AdminLayout\\Layout.cshtml",
               "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\AdminLayout\\Layout.cshtml",
               "RelativeToolTip": "Views\\AdminLayout\\Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-22T12:54:12.387Z",
+              "WhenOpened": "2026-07-22T14:46:34.056Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UpdateSkill.cshtml",
-              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Skill\\UpdateSkill.cshtml",
-              "RelativeDocumentMoniker": "Views\\Skill\\UpdateSkill.cshtml",
-              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Skill\\UpdateSkill.cshtml",
-              "RelativeToolTip": "Views\\Skill\\UpdateSkill.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAASAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultExperience\\Default.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Components\\_DefaultExperience\\Default.cshtml",
+              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultExperience\\Default.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Components\\_DefaultExperience\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-22T12:49:58.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CreateProject.cshtml",
-              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Project\\CreateProject.cshtml",
-              "RelativeDocumentMoniker": "Views\\Project\\CreateProject.cshtml",
-              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Project\\CreateProject.cshtml",
-              "RelativeToolTip": "Views\\Project\\CreateProject.cshtml",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAwwCMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-22T12:47:44.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CreateSkill.cshtml",
-              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Skill\\CreateSkill.cshtml",
-              "RelativeDocumentMoniker": "Views\\Skill\\CreateSkill.cshtml",
-              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Skill\\CreateSkill.cshtml",
-              "RelativeToolTip": "Views\\Skill\\CreateSkill.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-22T12:47:40.405Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Skill\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Skill\\Index.cshtml",
-              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Skill\\Index.cshtml",
-              "RelativeToolTip": "Views\\Skill\\Index.cshtml",
-              "ViewState": "AgIAANUAAAAAAAAAAAAAANUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-22T12:39:19.56Z",
+              "WhenOpened": "2026-07-22T14:46:21.79Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "SkillController.cs",
-              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Controllers\\SkillController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SkillController.cs",
-              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Controllers\\SkillController.cs",
-              "RelativeToolTip": "Controllers\\SkillController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBoAAAAJAAAAAAAAAA==",
+              "Title": "_DefaultExperienceViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\ViewComponents\\Default-Index\\_DefaultExperienceViewComponent.cs",
+              "RelativeDocumentMoniker": "ViewComponents\\Default-Index\\_DefaultExperienceViewComponent.cs",
+              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\ViewComponents\\Default-Index\\_DefaultExperienceViewComponent.cs",
+              "RelativeToolTip": "ViewComponents\\Default-Index\\_DefaultExperienceViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-22T12:39:08.622Z",
+              "WhenOpened": "2026-07-22T14:44:47.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UpdateExperience.cshtml",
+              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Experience\\UpdateExperience.cshtml",
+              "RelativeDocumentMoniker": "Views\\Experience\\UpdateExperience.cshtml",
+              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Experience\\UpdateExperience.cshtml",
+              "RelativeToolTip": "Views\\Experience\\UpdateExperience.cshtml",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAH0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T14:41:26.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CreateExperience.cshtml",
+              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Experience\\CreateExperience.cshtml",
+              "RelativeDocumentMoniker": "Views\\Experience\\CreateExperience.cshtml",
+              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Experience\\CreateExperience.cshtml",
+              "RelativeToolTip": "Views\\Experience\\CreateExperience.cshtml",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAwwH8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T14:36:12.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Experience\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Experience\\Index.cshtml",
+              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Experience\\Index.cshtml",
+              "RelativeToolTip": "Views\\Experience\\Index.cshtml",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAYwI4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T14:26:13.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ExperienceController.cs",
+              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Controllers\\ExperienceController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ExperienceController.cs",
+              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Controllers\\ExperienceController.cs",
+              "RelativeToolTip": "Controllers\\ExperienceController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-22T14:19:44.619Z",
               "EditorCaption": ""
             }
           ]
         },
         {
           "DockedWidth": 655,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Project\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Project\\Index.cshtml",
-              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Project\\Index.cshtml",
-              "RelativeToolTip": "Views\\Project\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-22T12:39:35.795Z",
+              "DocumentIndex": 13,
+              "Title": "SkillController.cs",
+              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Controllers\\SkillController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SkillController.cs",
+              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Controllers\\SkillController.cs",
+              "RelativeToolTip": "Controllers\\SkillController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-22T14:29:09.657Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Skill.cs",
-              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Data\\Entities\\Skill.cs",
-              "RelativeDocumentMoniker": "Data\\Entities\\Skill.cs",
-              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Data\\Entities\\Skill.cs",
-              "RelativeToolTip": "Data\\Entities\\Skill.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Skill\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Skill\\Index.cshtml",
+              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Skill\\Index.cshtml",
+              "RelativeToolTip": "Views\\Skill\\Index.cshtml",
+              "ViewState": "AgIAALcAAAAAAAAAAAAYwMAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T14:26:28.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Experience.cs",
+              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Data\\Entities\\Experience.cs",
+              "RelativeDocumentMoniker": "Data\\Entities\\Experience.cs",
+              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Data\\Entities\\Experience.cs",
+              "RelativeToolTip": "Data\\Entities\\Experience.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-22T12:40:03.419Z",
+              "WhenOpened": "2026-07-22T14:31:04.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateSkill.cshtml",
+              "DocumentMoniker": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Skill\\CreateSkill.cshtml",
+              "RelativeDocumentMoniker": "Views\\Skill\\CreateSkill.cshtml",
+              "ToolTip": "C:\\Users\\BURHAN\\Desktop\\Portfolio\\Portfolio\\Views\\Skill\\CreateSkill.cshtml",
+              "RelativeToolTip": "Views\\Skill\\CreateSkill.cshtml",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAowHEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T14:35:52.317Z",
               "EditorCaption": ""
             }
           ]

@@ -7,7 +7,7 @@
         public string Comment { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Initials { get; set; }
+        public string? Initials { get; set; }
         public string Title { get; set; }
 
     }

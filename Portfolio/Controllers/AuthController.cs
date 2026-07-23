@@ -42,7 +42,8 @@ namespace Portfolio.Controllers
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, admin.UserName),
-                new Claim("fullName", admin.FullName)
+                new Claim("fullName", admin.FullName),
+                new Claim("imageUrl", admin.ImageUrl ?? "")
             };
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);

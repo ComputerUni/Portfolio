@@ -1,0 +1,236 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<UserMessage>
+@{
+    ViewData["Title"] = "Gelen Mesajlar";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<style>
+    .experience-card {
+        border-radius: 16px;
+        border: 1px solid #e9ecef;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .experience-table thead th {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 16px 20px;
+    }
+
+        .experience-table thead th:first-child {
+            border-radius: 12px 0 0 0;
+        }
+
+        .experience-table thead th:last-child {
+            border-radius: 0 12px 0 0;
+        }
+
+    .experience-table tbody tr {
+        transition: background 0.15s;
+        border-bottom: 1px solid #f1f3f5;
+    }
+
+        .experience-table tbody tr:last-child {
+            border-bottom: none;
+        }
+
+        .experience-table tbody tr:hover {
+            background: #f8f9ff;
+        }
+
+    .experience-table td {
+        padding: 14px 20px;
+        vertical-align: middle;
+    }
+
+    .badge-active {
+        background: #d1fae5;
+        color: #065f46;
+        border: 1px solid #a7f3d0;
+        border-radius: 20px;
+        padding: 5px 14px;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+    .badge-passive {
+        background: #fee2e2;
+        color: #991b1b;
+        border: 1px solid #fca5a5;
+        border-radius: 20px;
+        padding: 5px 14px;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+    .experience-name {
+        font-weight: 600;
+        color: #1e293b;
+        font-size: 0.95rem;
+    }
+
+    .experience-id {
+        width: 32px;
+        height: 32px;
+        background: #f1f5f9;
+        border-radius: 8px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #64748b;
+    }
+
+    .btn-action {
+        width: 34px;
+        height: 34px;
+        border-radius: 8px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        transition: all 0.2s;
+    }
+
+    .btn-delete {
+        background: #fee2e2;
+        color: #dc2626;
+    }
+
+        .btn-delete:hover {
+            background: #dc2626;
+            color: white;
+        }
+
+    .btn-edit {
+        background: #fef3c7;
+        color: #d97706;
+    }
+
+        .btn-edit:hover {
+            background: #d97706;
+            color: white;
+        }
+
+    .header-stat {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 12px;
+        color: white;
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+</style>
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h4 class="fw-bold mb-1" style="color:#1e293b;">
+            <i class="bi bi-lightning-charge-fill me-2" style="color:#667eea;"></i>Gelen Mesajlar
+        </h4>
+        <p class="text-muted small mb-0">Tüm gelen mesajların listesi ve yönetimi</p>
+    </div>
+    <div class="d-flex align-items-center gap-3">
+        <a href="/UserMessage/Index" class="btn @(ViewBag.IsRead == null ? "btn-primary" : "btn-outline-secondary")" style="border-radius:10px;"><i class="bi bi-list"></i></a>
+        <a href="/UserMessage/Index?isRead=true" class="btn @(ViewBag.IsRead == true ? "btn-success" : "btn-outline-success")" style="border-radius:10px;">
+            <i class="bi bi-envelope-open"></i>
+        </a>
+        <a href="/UserMessage/Index?isRead=false" class="btn @(ViewBag.IsRead == false ? "btn-danger" : "btn-outline-danger")" style="border-radius:10px;">
+            <i class="bi bi-envelope"></i>
+        </a>
+        <div class="header-stat">
+            <i class="bi bi-bar-chart-fill me-1"></i>
+            Toplam: <strong>@Model.TotalItemCount</strong> &nbsp;|&nbsp;
+        </div>
+    </div>
+
+</div>
+@if (ViewBag.AllRead == true)
+{
+    <div class="alert alert-success d-flex align-items-center gap-2 mb-3" style="border-radius:12px;">
+        <i class="bi bi-check-circle-fill"></i>
+        Tüm mesajlar okundu.
+    </div>
+}
+else if (ViewBag.AllUnread == true)
+{
+    <div class="alert alert-warning d-flex align-items-center gap-2 mb-3" style="border-radius:12px;">
+        <i class="bi bi-exclamation-circle-fill"></i>
+        Hiç okunmamış mesaj yok, tüm mesajlar bekliyor.
+    </div>
+}
+<div class="experience-card overflow-hidden">
+    <table class="table experience-table mb-0">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Ad-Soyad</th>
+                <th>Email</th>
+                <th>Mesaj İçeriği</th>
+                <th>Okundu mu ?</th>
+                <th class="text-end">İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var message in Model)
+            {
+                <tr>
+                    <td><span class="experience-id">@message.Id</span></td>
+                    <td>@message.Name</td>
+                    <td>@message.Email</td>
+                    <td>@message.MessageBody.Substring(0, 20)...</td>
+                    <td>
+                        @if (message.IsRead)
+                        {
+                            <span class="badge-active">Okundu</span>
+                        }
+                        else
+                        {
+                            <span class="badge-passive">Okunmadı</span>
+                        }
+                    </td>
+                    <td class="text-end">
+                        <a href="/UserMessage/DetailMessage/@message.Id" class="btn-action btn-edit">
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                        <button onclick="deleteMessage(@message.Id)" class="btn-action btn-delete me-1">
+                            <i class="bi bi-trash-fill"></i>
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div class="d-flex justify-content-end mt-4">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+        new X.PagedList.Mvc.Core.PagedListRenderOptions
+        {
+            LiElementClasses = new[] { "page-item" },
+            PageClasses = new[] { "page-link" }
+        })
+</div>
+
+<script>
+    function deleteMessage(id) {
+        Swal.fire({
+            title: "Silmek istediğinize emin misiniz?",
+            text: "Bu işlemi geri alamayacaksınız!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#667eea",
+            cancelButtonColor: "#dc2626",
+            confirmButtonText: "Evet, sil!",
+            cancelButtonText: "Vazgeç",
+            borderRadius: "12px"
+        }).then((result) => {
+            if (result.isConfirmed)
+                window.location.href = "/Message/DeleteMessage/" + id;
+        });
+    }
+</script>

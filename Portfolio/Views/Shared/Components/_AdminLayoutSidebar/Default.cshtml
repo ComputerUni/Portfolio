@@ -18,15 +18,15 @@
             <span class="font-label-md text-label-md">Banner</span>
         </a>
         <a href="/Skill/Index" class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors duration-200 cursor-pointer active:opacity-80">
-            <span class="material-symbols-outlined">dashboard</span>
+            <span class="material-symbols-outlined">psychology</span>
             <span class="font-label-md text-label-md">Yeteneklerim</span>
         </a>
         <a href="/Experience/Index" class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors duration-200 cursor-pointer active:opacity-80">
-            <span class="material-symbols-outlined">dashboard</span>
+            <span class="material-symbols-outlined">work_history</span>
             <span class="font-label-md text-label-md">Deneyimlerim</span>
         </a>
         <a href="/Education/Index" class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors duration-200 cursor-pointer active:opacity-80">
-            <span class="material-symbols-outlined">dashboard</span>
+            <span class="material-symbols-outlined">school</span>
             <span class="font-label-md text-label-md">Eğitimlerim</span>
         </a>
         <a href="/Project/Index" class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors duration-200 cursor-pointer active:opacity-80">
@@ -34,24 +34,36 @@
             <span class="font-label-md text-label-md">Projelerim</span>
         </a>
         <a href="/ProjectTechStacks/Index" class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors duration-200 cursor-pointer active:opacity-80">
-            <span class="material-symbols-outlined">folder_open</span>
+            <span class="material-symbols-outlined">layers</span>
             <span class="font-label-md text-label-md">Teknolojiler</span>
+        </a>
+        <a href="/Service/Index" class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors duration-200 cursor-pointer active:opacity-80">
+            <span class="material-symbols-outlined">build</span>
+            <span class="font-label-md text-label-md">Hizmetlerim</span>
         </a>
         <a href="/About/Index" class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors duration-200 cursor-pointer active:opacity-80">
             <span class="material-symbols-outlined">person</span>
             <span class="font-label-md text-label-md">Hakkımızda</span>
         </a>
-        <a class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors duration-200 cursor-pointer active:opacity-80" href="#">
+        <a href="/Testimonial/Index" class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors duration-200 cursor-pointer active:opacity-80">
+            <span class="material-symbols-outlined">format_quote</span>
+            <span class="font-label-md text-label-md">Yorumlar</span>
+        </a>
+        <a href="/UserMessage/Index" class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors duration-200 cursor-pointer active:opacity-80">
             <span class="material-symbols-outlined">mail</span>
             <span class="font-label-md text-label-md">Gelen Mesajlar</span>
         </a>
+        <a href="/Setting/Index" class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors duration-200 cursor-pointer active:opacity-80">
+            <span class="material-symbols-outlined">settings</span>
+            <span class="font-label-md text-label-md">Ayarlar</span>
+        </a>
         <a class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-highest transition-colors duration-200 cursor-pointer active:opacity-80" href="/Auth/Logout">
-            <i class="fa fa-arrow-right"></i>
+            <span class="material-symbols-outlined">logout</span>
             <span class="font-label-md text-label-md">Çıkış Yap</span>
         </a>
     </nav>
     <div class="mt-auto px-md flex items-center gap-md pt-lg border-t border-outline-variant">
-        <img class="w-10 h-10 rounded-full object-cover" data-alt="A professional headshot of a senior project manager with a friendly expression, wearing a navy blue blazer against a neutral office background. The lighting is soft and professional, emphasizing a modern corporate aesthetic with high-quality, high-key values." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlqBWu1p3aEq67qLFKu3y0UlRSj2DnWM__vm_crDnbFt0J1ysDUDdO844jg0nfKyChHiwtprZpN7CA3NUWKdHRFl9P8J1GJ028acIMqkkHcyPX3vP-AB-NprsvMmxoHSenYYR-g8W4k6DVuPAXSbNCH4DrEV4_2_GzRs1fGTBkJVgBqXOhs8AL0fYxwnpir9XR3RDD69DW37S4km1I3hj57im8Qkw3l9z73SC8C7_IOQ71vqx5-6vGnu6WDoQUdm9B06QEUJwZHz3V" />
+        <img class="w-10 h-10 rounded-full object-cover" src="@User.FindFirst("imageUrl")?.Value" />
         <div>
             <p class="font-label-md text-label-md font-bold text-on-surface">@ViewBag.fullName</p>
             <p class="text-[10px] text-on-surface-variant uppercase tracking-wider font-semibold">Admin</p>

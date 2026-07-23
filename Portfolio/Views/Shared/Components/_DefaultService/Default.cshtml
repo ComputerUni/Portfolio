@@ -1,0 +1,17 @@
+﻿@model List<Service>
+
+<section class="py-section-padding-mobile md:py-section-padding-desktop px-gutter relative bg-surface-container-lowest" id="services">
+    <div class="max-w-container-max mx-auto">
+        <h2 class="font-headline-md text-headline-md text-on-background mb-stack-lg">Hizmetlerim</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
+            @foreach(var service in Model)
+            {
+                <div class="glass-card p-stack-lg rounded-xl flex flex-col gap-stack-sm hover:-translate-y-2 transition-transform duration-300">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-stack-sm" style="font-variation-settings: 'FILL' 0;">@service.Icon</span>
+                    <h3 class="font-body-lg text-body-lg font-semibold text-on-background">@service.Title</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">@service.Description</p>
+                </div>
+            }            
+        </div>
+    </div>
+</section>

@@ -192,7 +192,7 @@
     <!-- TopNavBar -->
     <nav class="bg-background/80 dark:bg-background/80 backdrop-blur-xl border-b border-outline-variant/10 fixed top-0 w-full z-50">
         <div class="flex justify-between items-center max-w-[1200px] mx-auto px-gutter h-20">
-            <a class="font-headline-md text-headline-md font-extrabold tracking-tighter text-on-background dark:text-on-background cursor-pointer active:scale-95" href="#">KADİR.DEV</a>
+            <a class="font-headline-md text-headline-md font-extrabold tracking-tighter text-on-background dark:text-on-background cursor-pointer active:scale-95" href="#">Mehmet Kadir Güngör</a>
             <div class="hidden md:flex items-center gap-stack-lg">
                 <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#about">Hakkımda</a>
                 <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#services">Hizmetlerim</a>
@@ -200,8 +200,6 @@
                 <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#experience">Deneyimlerim</a>
                 <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#contact">İletişim</a>
             </div>
-            <a class="hidden md:inline-flex items-center justify-center px-6 py-3 bg-primary text-on-primary rounded-DEFAULT font-label-sm text-label-sm hover:opacity-90 transition-opacity cursor-pointer active:scale-95" href="/Auth/Login">Panele Giriş</a>
-
             <a class="hidden md:inline-flex items-center justify-center px-6 py-3 bg-primary text-on-primary rounded-DEFAULT font-label-sm text-label-sm hover:opacity-90 transition-opacity cursor-pointer active:scale-95" href="#contact">İletişime Geçin</a>
             <!-- Mobile Menu Button -->
             <button class="md:hidden text-on-background">
@@ -230,95 +228,11 @@
             </div>
         </section>
         <!-- Services Section -->
-        <section class="py-section-padding-mobile md:py-section-padding-desktop px-gutter relative bg-surface-container-lowest" id="services">
-            <div class="max-w-container-max mx-auto">
-                <h2 class="font-headline-md text-headline-md text-on-background mb-stack-lg">Specialized Services</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
-                    <!-- Service 1 -->
-                    <div class="glass-card p-stack-lg rounded-xl flex flex-col gap-stack-sm hover:-translate-y-2 transition-transform duration-300">
-                        <span class="material-symbols-outlined text-primary text-4xl mb-stack-sm" style="font-variation-settings: 'FILL' 0;">code</span>
-                        <h3 class="font-body-lg text-body-lg font-semibold text-on-background">Web Development</h3>
-                        <p class="font-body-md text-body-md text-on-surface-variant">Building robust, scalable front-end and back-end architectures using modern frameworks like React, Next.js, and Node.js.</p>
-                    </div>
-                    <!-- Service 2 -->
-                    <div class="glass-card p-stack-lg rounded-xl flex flex-col gap-stack-sm hover:-translate-y-2 transition-transform duration-300">
-                        <span class="material-symbols-outlined text-primary text-4xl mb-stack-sm" style="font-variation-settings: 'FILL' 0;">design_services</span>
-                        <h3 class="font-body-lg text-body-lg font-semibold text-on-background">UI/UX Design</h3>
-                        <p class="font-body-md text-body-md text-on-surface-variant">Crafting intuitive, user-centric interfaces with a focus on minimalist aesthetics, typography, and fluid micro-interactions.</p>
-                    </div>
-                    <!-- Service 3 -->
-                    <div class="glass-card p-stack-lg rounded-xl flex flex-col gap-stack-sm hover:-translate-y-2 transition-transform duration-300">
-                        <span class="material-symbols-outlined text-primary text-4xl mb-stack-sm" style="font-variation-settings: 'FILL' 0;">cloud</span>
-                        <h3 class="font-body-lg text-body-lg font-semibold text-on-background">Cloud Solutions</h3>
-                        <p class="font-body-md text-body-md text-on-surface-variant">Deploying and managing secure, high-availability infrastructure on AWS and Vercel for optimal performance.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        @await Component.InvokeAsync("_DefaultService")
         <!-- Portfolio Slider Section -->
         @await Component.InvokeAsync("_DefaultProject")
         <!-- Testimonials Section -->
-        <section class="py-section-padding-mobile md:py-section-padding-desktop px-gutter relative" id="testimonials">
-            <div class="max-w-container-max mx-auto">
-                <h2 class="font-headline-md text-headline-md text-on-background mb-stack-lg text-center">Hakkımda Söylenenler</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
-                    <!-- Testimonial 1 -->
-                    <div class="glass-card p-stack-lg rounded-xl flex flex-col gap-stack-sm relative">
-                        <div class="flex gap-1 mb-2">
-                            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-                        </div>
-                        <p class="font-body-md text-body-md text-on-surface-variant flex-grow">"Alex transformed our outdated platform into a modern, lightning-fast application. His attention to detail and technical expertise are truly impressive."</p>
-                        <div class="mt-stack-md flex items-center gap-3 border-t border-outline-variant/30 pt-stack-sm">
-                            <div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant font-bold">SJ</div>
-                            <div>
-                                <h4 class="font-label-sm text-label-sm text-on-background">Sarah Jenkins</h4>
-                                <p class="font-label-sm text-label-sm text-on-surface-variant font-normal">CTO, TechFlow</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Testimonial 2 -->
-                    <div class="glass-card p-stack-lg rounded-xl flex flex-col gap-stack-sm relative">
-                        <div class="flex gap-1 mb-2">
-                            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-                        </div>
-                        <p class="font-body-md text-body-md text-on-surface-variant flex-grow">"Working with Alex was a seamless experience. He delivered our e-commerce site ahead of schedule and the code quality was top-notch."</p>
-                        <div class="mt-stack-md flex items-center gap-3 border-t border-outline-variant/30 pt-stack-sm">
-                            <div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant font-bold">MR</div>
-                            <div>
-                                <h4 class="font-label-sm text-label-sm text-on-background">Michael Rivera</h4>
-                                <p class="font-label-sm text-label-sm text-on-surface-variant font-normal">Founder, Elevate Retail</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Testimonial 3 -->
-                    <div class="glass-card p-stack-lg rounded-xl flex flex-col gap-stack-sm relative">
-                        <div class="flex gap-1 mb-2">
-                            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star_half</span>
-                        </div>
-                        <p class="font-body-md text-body-md text-on-surface-variant flex-grow">"An exceptional engineer who brings both deep technical knowledge and a strong design sensibility to every project. Highly recommended."</p>
-                        <div class="mt-stack-md flex items-center gap-3 border-t border-outline-variant/30 pt-stack-sm">
-                            <div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant font-bold">EL</div>
-                            <div>
-                                <h4 class="font-label-sm text-label-sm text-on-background">Emily Chen</h4>
-                                <p class="font-label-sm text-label-sm text-on-surface-variant font-normal">Product Manager, DataSync</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        @await Component.InvokeAsync("_DefaultTestimonial")
         <!-- Contact Section -->
         <section class="py-section-padding-mobile md:py-section-padding-desktop px-gutter relative bg-surface-container-lowest" id="contact">
             <div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-stack-lg">

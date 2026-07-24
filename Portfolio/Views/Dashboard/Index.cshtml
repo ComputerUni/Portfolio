@@ -1,0 +1,216 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<style>
+    .stat-card {
+        border-radius: 16px;
+        padding: 24px;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .stat-icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 12px;
+        background: rgba(255,255,255,0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+
+    .stat-value {
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .stat-label {
+        font-size: 0.85rem;
+        opacity: 0.85;
+        margin-top: 4px;
+    }
+
+    .quick-card {
+        border-radius: 16px;
+        border: 1px solid #e9ecef;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        overflow: hidden;
+    }
+
+    .quick-card-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 16px 20px;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    .quick-table thead th {
+        background: #f8fafc;
+        color: #64748b;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 12px 16px;
+        border: none;
+    }
+
+    .quick-table td {
+        padding: 12px 16px;
+        vertical-align: middle;
+        border-bottom: 1px solid #f1f3f5;
+        font-size: 0.9rem;
+    }
+
+    .quick-table tbody tr:last-child td {
+        border-bottom: none;
+    }
+
+    .quick-table tbody tr:hover {
+        background: #f8f9ff;
+    }
+</style>
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h4 class="fw-bold mb-1" style="color:#1e293b;">
+            <i class="bi bi-lightning-charge-fill me-2" style="color:#667eea;"></i>Dashboard
+        </h4>
+        <p class="text-muted small mb-0">Genel İstatistikler</p>
+    </div>
+</div>
+
+<div class="row g-3 mb-4">
+    <div class="col-md-3">
+        <div class="stat-card" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+            <div class="stat-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+                <div class="stat-value">@ViewBag.MessageCount</div>
+                <div class="stat-label">Toplam Mesaj Sayısı</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="stat-card" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+            <div class="stat-icon"><i class="bi bi-envelope-open-fill"></i></div>
+            <div>
+                <div class="stat-value">@ViewBag.ReadMessageCount</div>
+                <div class="stat-label">Toplam Okunan Mesaj Sayısı</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="stat-card" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+            <div class="stat-icon"><i class="bi bi-lightning-fill"></i></div>
+            <div>
+                <div class="stat-value">@ViewBag.ProjectCount</div>
+                <div class="stat-label">Toplam Proje Sayısı</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="stat-card" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+            <div class="stat-icon"><i class="bi bi-briefcase-fill"></i></div>
+            <div>
+                <div class="stat-value">@ViewBag.ExperienceCount</div>
+                <div class="stat-label">Toplam Deneyim Sayısı</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="stat-card" style="background: linear-gradient(135deg, #fa709a, #fee140);">
+            <div class="stat-icon"><i class="bi bi-star-fill"></i></div>
+            <div>
+                <div class="stat-value">@ViewBag.TestimonialCount</div>
+                <div class="stat-label">Hakkında Yorum Sayısı</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="stat-card" style="background: linear-gradient(135deg, #fa709a, #fee140);">
+            <div class="stat-icon"><i class="bi bi-star-fill"></i></div>
+            <div>
+                <div class="stat-value">@ViewBag.SkillsCount</div>
+                <div class="stat-label">Yetenek Sayısı</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="stat-card" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);">
+            <div class="stat-icon"><i class="bi bi-tools"></i></div>
+            <div>
+                <div class="stat-value">@ViewBag.ServiceCount</div>
+                <div class="stat-label">Toplam Hizmet Sayısı</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-3">
+    <div class="col-md-6">
+        <div class="quick-card">
+            <div class="quick-card-header d-flex justify-content-between align-items-center">
+                <span><i class="bi bi-lightning-fill me-2"></i>Son Projeler</span>
+                <a href="/Project/Index" class="text-white small">Tümünü Gör →</a>
+            </div>
+            <table class="table quick-table mb-0">
+                <thead>
+                    <tr>
+                        <th>Proje Adı</th>
+                        <th>GitHub</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var project in ViewBag.RecentProject)
+                    {
+                        <tr>
+                            <td>@project.Name</td>
+                            <td><a href="@project.GithubUrl" target="_blank" class="text-primary"><i class="bi bi-github fs-5"></i></a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="quick-card">
+            <div class="quick-card-header d-flex justify-content-between align-items-center">
+                <span><i class="bi bi-envelope me-2"></i>Son Mesajlar</span>
+                <a href="/UserMessage/Index" class="text-white small">Tümünü Gör →</a>
+            </div>
+            <table class="table quick-table mb-0">
+                <thead>
+                    <tr>
+                        <th>Ad Soyad</th>
+                        <th>Durum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var message in ViewBag.RecentMessages)
+                    {
+                        <tr>
+                            <td>@message.Name</td>
+                            <td>
+                                @if (message.IsRead)
+                                {
+                                    <span class="badge-active">Okundu</span>
+                                }
+                                else
+                                {
+                                    <span class="badge-passive">Okunmadı</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

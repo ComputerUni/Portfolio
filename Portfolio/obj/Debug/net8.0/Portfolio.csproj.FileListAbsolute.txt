@@ -139,7 +139,6 @@ C:\Users\BURHAN\Desktop\Portfolio\Portfolio\obj\Debug\net8.0\staticwebassets.bui
 C:\Users\BURHAN\Desktop\Portfolio\Portfolio\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\BURHAN\Desktop\Portfolio\Portfolio\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\BURHAN\Desktop\Portfolio\Portfolio\obj\Debug\net8.0\swae.build.ex.cache
-C:\Users\BURHAN\Desktop\Portfolio\Portfolio\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\BURHAN\Desktop\Portfolio\Portfolio\obj\Debug\net8.0\Portfolio.csproj.Up2Date
 C:\Users\BURHAN\Desktop\Portfolio\Portfolio\obj\Debug\net8.0\Portfolio.dll
 C:\Users\BURHAN\Desktop\Portfolio\Portfolio\obj\Debug\net8.0\refint\Portfolio.dll
@@ -149,3 +148,5 @@ C:\Users\BURHAN\Desktop\Portfolio\Portfolio\obj\Debug\net8.0\ref\Portfolio.dll
 C:\Users\BURHAN\Desktop\Portfolio\Portfolio\bin\Debug\net8.0\X.PagedList.dll
 C:\Users\BURHAN\Desktop\Portfolio\Portfolio\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
 C:\Users\BURHAN\Desktop\Portfolio\Portfolio\obj\Debug\net8.0\Portfolio.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\BURHAN\Desktop\Portfolio\Portfolio\bin\Debug\net8.0\dotnet-tools.json
+C:\Users\BURHAN\Desktop\Portfolio\Portfolio\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
